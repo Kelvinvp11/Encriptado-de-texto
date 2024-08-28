@@ -14,28 +14,29 @@
 
         <div class="encriptar">
             <textarea name="texto" id="texto" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
+
+
+            <div class="terminos">
+                <p>Solo letras minusculas y sin acentos.</p>
+            </div>
+
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <input type="button" class="btn-desencriptar" value="desencriptar" onclick="desencriptar()" />
+            </div>
+
         </div>
 
-        <div class="terminos">
-            <p>Solo letras minusculas y sin acentos.</p>
+        <div class="encriptado">
+            <img src="" alt="" id="img-encriptado" />
+
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+            </div>
+
         </div>
-
-        <div class="botones">
-            <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
-            <input type="button" class="btn-desencriptar" value="desencriptar" onclick="desencriptar()" />
-        </div>
-
-    </div>
-
-    <div class="encriptado">
-        <img src="" alt="" id="img-encriptado">
-
-        <div class="mensaje-encriptado" id="mensaje-encriptado">
-            <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
-            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
-        </div>
-
     </div>
 
 </body>
